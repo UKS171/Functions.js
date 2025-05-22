@@ -1,2 +1,164 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+//Let Var Const
+let name;
+var name1;
+const name2 = 33;
+//Let
+if (true) {
+  //console.log(subname);
+  let subname = 234;
+  if (true) {
+    console.log(subname);
+  }
+  console.log(subname);
+}
+//var uses hoisting affect
+if (true) {
+  console.log(subname);
+  var subname = 234;
+  console.log(subname);
+}
+console.log(subname);
+//const
+if (true) {
+  const subname = 234;
+  const pi = 234;
+  console.log(subname);
+}
+console.log(subname);
+//Objects
+//Data Structures
+//Key Values
+//Hash Datastructure
+let person = {
+  name: "Kalsoom",
+  hobby: "Nothing",
+  designation: "Web Developer",
+  doesLikeCricket: false,
+  kmDriven: 34567,
+  nadra: {
+    expiryDate: "23/45/667",
+    issueDate: "23/45/63",
+  },
+};
+let cat = {
+  name: "dsdf",
+  age: "asdf",
+  lastCheckupDate: "SDAdfgh",
+};
+let dataFromPipeline = {
+  message: "",
+  posts: [],
+};
+person.kmDriven = 43567;
+console.log(person);
+//person.doesLikeCricket = true;
+//person.doesLikeCricket = false;
+if (!person.doesLikeCricket) {
+  delete person.kmDriven;
+}
+console.log(person);
+//Arrays
+let personNames = [
+  "Ali",
+  "Kalsoom",
+  "Kan",
+  "dsf",
+  "Dsf",
+  23,
+  4,
+  5,
+  6,
+  3,
+  "Kalsoom",
+  true,
+  false,
+];
+let persons = [
+  {
+    name: "Kalsoom",
+    hobby: "Nothing",
+    designation: "Web Developer",
+    doesLikeCricket: false,
+    kmDriven: 34567,
+    nadra: {
+      expiryDate: "23/45/667",
+      issueDate: "23/45/63",
+    },
+  },
+  {
+    name: "Kalsoom",
+    hobby: "Nothing",
+    designation: "Web Developer",
+    doesLikeCricket: false,
+    kmDriven: 345,
+    nadra: {
+      expiryDate: "23/45/667",
+      issueDate: "23/45/63",
+    },
+  },
+  {
+    name: "Kalsoom",
+    hobby: "Nothing",
+    designation: "Web Developer",
+    doesLikeCricket: false,
+    kmDriven: 345678,
+    nadra: {
+      expiryDate: "23/45/667",
+      issueDate: "23/45/63",
+    },
+  },
+];
+console.log(persons[1].designation);
+console.log(persons.length);
+console.log(personNames.indexOf("Kalsoom234"));
+console.log(personNames.includes("Ali"));
+console.log(personNames.lastIndexOf("Kalsoom"));
+function sayGreet(func) {
+  func();
+}
+sayGreet(() => {
+  console.log("I am Kalsoom Callback Function");
+});
+personNames.map((map) => {
+  if (name == "Kalsoom") {
+    alert("I found Kalsoom");
+  }
+});
+//Filter
+//Find
+console.log("Kalsoom".includes("as"));
+console.log(typeof "Ka");
+let filteredNames = personNames.filter((name) => {
+  if (typeof name == "string") {
+    if (name.includes("ls") || name.includes("sf")) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+});
+console.log(filteredNames);
+let filteredPersons = persons.filter((pr) => {
+  if (pr.kmDriven > 10000) {
+    return true;
+  }
+});
+console.log(personNames);
+personNames.push("New Element");
+personNames.push("Mal");
+personNames.push("dsfg");
+personNames.push("dsfg sfdhgfgjhk");
+personNames.push(true);
+personNames.push({ name: "dfg" });
+personNames.unshift({ name: "dfg" });
+console.log(personNames);
+console.log(personNames);
+personNames.pop();
+personNames.pop();
+personNames.shift();
+console.log(personNames);
+let schoolNames = [];
+function addSchoolToList() {
+  schoolNames.push("LGS");
+  console.log(schoolNames);
+}
